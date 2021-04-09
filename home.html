@@ -10,6 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Devices CSS -->
+    <link rel="stylesheet" href="assets/css/devices.css">
     <!-- Icon -->
     <link rel="stylesheet" href="assets/fonts/line-icons.css">
     <!-- Owl carousel -->
@@ -35,6 +37,14 @@
             width: 100%;
             object-fit: cover ;
             filter: brightness(0.6);
+        }
+        @media only screen and (max-width: 640px) {
+            .cover-land {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover ;
+        }
         }
         .carousel-item {
             -webkit-transform-style: preserve-3d;
@@ -70,18 +80,23 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">
-                                Services
+                            <a class="nav-link" href="#connections">
+                                Connections
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">
-                                Team
+                            <a class="nav-link" href="#join">
+                                Join
                             </a>
                         </li>
-                        <li class="nav-item d-none">
-                            <a class="nav-link" href="#pricing">
-                                Pricing
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">
+                                Features
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#working">
+                                Working
                             </a>
                         </li>
                         <li class="nav-item">
@@ -89,11 +104,11 @@
                                 Testimonial
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#contact">
                                 Contact
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -137,15 +152,26 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/cover.jpg" class="cover" alt="...">
-                    <div class="carousel-caption" style="display: grid; place-items: start;">
-                        <h2 class="text-white text-left">Connecting Business Resources<br> Across the Globe,<br> at ONE Platform.</h2>
-                        <p class="text-left text-gray">Connect with Cofounders, Investors,Professional Employees, Manufacturer and Many more.</p>
-                        <button class="btn mt-3" style="border-radius: 20px; background: cornflowerblue; width: 150px; ">SIGN UP</button>
+                    <img src="./assets/img/hero-area-blue.svg" class="cover-land" alt="...">
+                    <div class="carousel-caption" >
+                        <div class="row d-flex mt-5 mt-md-0" style="width: 100%">
+                            <div class="col-6" style="flex: 1; align-self:center;">
+                                <h2 class="text-left">Connecting Business Resources<br> Across the Globe,<br> at ONE Platform.</h2>
+                                <p class="text-left" style="color: #333;">Connect with Cofounders, Investors,Professional Employees, Manufacturer and Many more.</p>
+
+                                <div class="d-flex">
+                                    <a href="/sign-up" class="btn mt-3 mr-2" style="border-radius: 20px; background: cornflowerblue; width: 150px; ">SIGN UP</a>
+                                    <a href="/log-in" class="btn mt-3 btnlogin-action" >LOG IN</a>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block col-6" style="flex: 1; align-self:center;">
+                                <img src="./assets/img/iphone-cover.png" class="img-fluid" style="height: 400px;" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/cover-1.jpg" class="cover" alt="...">
+                    <img src="./assets/img/cover-4.jpg" class="cover" alt="...">
                     <div class="carousel-caption" style="display: grid; place-items: start;">
                         <h2 class="text-white text-left">Connecting Business Resources<br> Across the Globe,<br> at ONE Platform.</h2>
                         <p class="text-left text-gray">Connect with Cofounders, Investors,Professional Employees, Manufacturer and Many more.</p>
@@ -176,7 +202,7 @@
     <!-- Header Area wrapper End -->
 
     <!-- Services Section Start -->
-    <section id="services" class="section-padding">
+    <section id="connections" class="section-padding">
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Connecting Everyone</h2>
@@ -187,12 +213,11 @@
                 <div class="col-md-6 col-lg-4 col-xs-12">
                     <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
                         <div class="icon">
-                            <i class="lni lni-network"></i>
+                            <i class="lni-rocket"></i>
                         </div>
                         <div class="services-content">
                             <h3><a href="#">Network</a></h3>
-                            <p>Boost your business developments, sales, increase efficiency and create an awareness of
-                                your brand with us.</p>
+                            <p>boost your connections related to startup by registering as Investor, Startup, Mentor, Co-founder, and Incubator.</p>
                         </div>
                     </div>
                 </div>
@@ -204,8 +229,10 @@
                         </div>
                         <div class="services-content">
                             <h3><a href="#">Job Seekers</a></h3>
-                            <p>you will get all individuals serving peoples like Cook, Driver, Lawyer, Software
-                                developer, Animator, Marketing persons, and much more.</p>
+                            <p>If you are here to serve as a freelancer, Jobseeker, or professional.
+                                then this is the best section where you can get register and serve as Cook, Driver,
+                                CA, CS, Lawyer, Software developer, animator, marketing persons, contractor,
+                                and much more.</p>
                         </div>
                     </div>
                 </div>
@@ -219,6 +246,19 @@
                             <h3><a href="#">Franchise</a></h3>
                             <p>We are differently integrated franchise solutions, we help you in providing every minute
                                 detail to entrepreneurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services item -->
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
+                        <div class="icon">
+                            <i class="lni-rocket"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Business on Sale</a></h3>
+                            <p>find out the buyers for your business, if you want to sell or
+                                exchange your entire business. Register and reach people out there.</p>
                         </div>
                     </div>
                 </div>
@@ -248,26 +288,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Services item -->
-                <div class="col-md-6 col-lg-4 col-xs-12">
-                    <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
-                        <div class="icon">
-                            <i class="lni-rocket"></i>
-                        </div>
-                        <div class="services-content">
-                            <h3><a href="#">Business on Sale</a></h3>
-                            <p>Finding the best running business sale price? Our product is offering a combination of
-                                function and style, yet at an affordable price.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
     <!-- Services Section End -->
 
     <!-- About Section start -->
-    <div class="about-area section-padding bg-gray">
+    <div class="about-area section-padding bg-gray" id="join">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-xs-12 info">
@@ -298,7 +326,7 @@
     <!-- About Section End -->
 
     <!-- Features Section Start -->
-    <section id="features" class="section-padding d-none">
+    <section id="features" class="section-padding">
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Awesome Features</h2>
@@ -336,9 +364,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="display: grid; place-items: center;">
                     <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
-                        <img src="assets/img/feature/intro-mobile.png" alt="">
+                        <img src="assets/img/logo.svg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -377,8 +405,68 @@
     </section>
     <!-- Features Section End -->
 
+        <!-- How it Workd Section Start -->
+        <section id="working" class="section-padding bg-gray">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">How Business Unify Works</h2>
+                    <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col-lg-8 col-md-12 col-xs-12 col-12 howitworks" data-wow-delay="0.3s">
+                        <div class="device device-surface-book">
+                            <div class="device-frame">
+                              <img class="device-content" src="assets/img/franchise_shots1.jpg">
+                            </div>
+                            <div class="device-stripe"></div>
+                            <div class="device-header"></div>
+                            <div class="device-sensors"></div>
+                            <div class="device-btns"></div>
+                            <div class="device-power"></div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-xs-12 info align-items-center d-flex">
+                        <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                            <div>
+                                <ol>
+                                    <li class="steps-count mb-3 mb-md-5 d-flex">
+                                        <i class="lni lni-checkmark icon" style="font-size: 30px;"></i>
+                                        <div>
+                                            <h3 class="step-heading">Signup</h3>
+                                            <p class="step-desc">Signup yourself with your email ID, mobile number, and password
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="steps-count mb-3 mb-md-5 d-flex">
+                                        <i class="lni lni-checkmark icon" style="font-size: 30px;"></i>
+                                        <div>
+                                            <h3 class="step-heading">Select Field</h3>
+                                            <p class="step-desc">Select your field, as what you want to get register over here, so the related form gets open. </p>
+                                        </div>
+                                    </li>
+                                    <li class="steps-count mb-3 mb-md-5 d-flex">
+                                        <i class="lni lni-checkmark icon" style="font-size: 30px;"></i>
+                                        <div>
+                                            <h3 class="step-heading">Connect</h3>
+                                            <p class="step-desc">Now your account is ready to connect with our vast community over the world.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- How it Works Section End -->
+
+
     <!-- Team Section Start -->
-    <section id="team" class="section-padding bg-gray">
+    <section id="team" class="section-padding bg-gray d-none">
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Meet Our Team</h2>
@@ -572,13 +660,6 @@
                                 <div class="content">
                                     <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
                                         tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                                    <div class="star-icon mt-3">
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -594,13 +675,6 @@
                                 <div class="content">
                                     <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
                                         tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                                    <div class="star-icon mt-3">
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -616,13 +690,6 @@
                                 <div class="content">
                                     <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
                                         tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                                    <div class="star-icon mt-3">
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -638,13 +705,6 @@
                                 <div class="content">
                                     <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
                                         tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
-                                    <div class="star-icon mt-3">
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-filled"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                        <span><i class="lni-star-half"></i></span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -676,7 +736,7 @@
     <!-- Call To Action Section Start -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section-padding bg-gray">
+    <section id="contact" class="section-padding bg-gray d-none">
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Contact Us</h2>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); */
 html {
   overflow-x: hidden;
 }
@@ -593,7 +594,7 @@ hr {
 
 .navbar-expand-md .navbar-nav .nav-link {
   /* color of icons before scroll down #333*/
-  color: #fafafa;
+  color: #333;
   font-weight: 400;
   padding: 7px 0;
   cursor: pointer;
@@ -1049,6 +1050,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
   width: inherit;
+  height: 120px;
   padding: 7px;
 }
 
@@ -1434,4 +1436,48 @@ textarea {
 
 .social-icon .google:hover {
   background: #CE332A;
+}
+
+
+/* button on slider hover  */
+.btnlogin-action {
+  border-radius: 20px; 
+  background: transparent; 
+  border-color: cornflowerblue; 
+  width: 150px;
+  color: cornflowerblue;
+}
+
+
+.btnlogin-action:hover {
+	color: #fff;
+	border-color: var(--site-theme);
+	background: cornflowerblue
+}
+
+
+.steps-count > .icon {
+  padding: 5px;
+  /* background-color: green; */
+  color: green;
+  /* border-radius: 50%; */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.step-heading {
+  font-size: 1.5rem;
+}
+
+.step-desc {
+  color: #555A64;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .howitworks {
+    display: flex;
+    align-items: center;
+    height: 250px;
+  }
 }
