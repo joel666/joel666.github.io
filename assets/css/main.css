@@ -1502,3 +1502,13 @@ textarea {
   height: 30px;
   width: 30px;
 }
+
+#why-join {
+  color: #414040;
+  text-align: justify;
+}
+
+.wj-ul >li {
+  margin: 5px 0;
+  font-size: 14px;
+}
