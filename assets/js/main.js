@@ -57,7 +57,9 @@
         margin: 15,
         slideSpeed: 1000,
         stopOnHover: true,
-        autoPlay: true,
+        autoplay: true,
+        autoplayTimeout:4500,
+        autoplayHoverPause:false,
         responsiveClass: true,
         responsiveRefreshRate: true,
         responsive : {

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 html {
   overflow-x: hidden;
 }
@@ -12,7 +12,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
   font-size: 38px;
   color: #222222;
   font-weight: 700;
-  font-family: 'Arvo', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -349,7 +349,11 @@ hr {
 }
 
 #features .content-left .text {
-  text-align: right;
+  /* text-align: right; */
+}
+
+.text-1 {
+  /* text-align: left; */
 }
 
 #features .content-right span {
@@ -380,7 +384,8 @@ hr {
 }
 
 #features .box-item .icon i {
-  color: var(--site-theme);
+  /* color: var(--site-theme); */
+  color: #333;
   font-size: 30px;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -433,7 +438,14 @@ hr {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
+.services-item p {
+  color: #333;
+}
+
 .services-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #f1f1f1;
   width: 70px;
   height: 70px;
@@ -447,7 +459,8 @@ hr {
 
 .services-item .icon i {
   font-size: 30px;
-  color: var(--site-theme);
+  /* color: var(--site-theme); */
+  color: #333;
   line-height: 70px;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -480,7 +493,7 @@ hr {
 }
 
 .services-item:hover .icon i {
-  color: #fff;
+  /* color: #fff; */
 }
 
 #service {
@@ -1034,11 +1047,13 @@ hr {
   background-color: var(--site-theme);
 }
 
+
 .testimonial-item {
   background: #fff;
   border-radius: 4px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 20px;  
+  height: 450px;
 }
 
 .testimonial-item .img-thumb {
@@ -1480,4 +1495,11 @@ textarea {
     align-items: center;
     height: 250px;
   }
+}
+
+
+/* testimonial cards */
+.icon-img {
+  height: 30px;
+  width: 30px;
 }
